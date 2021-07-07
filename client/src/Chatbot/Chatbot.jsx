@@ -28,7 +28,7 @@ function Chatbot() {
     const textQueryVariables = {
       text,
     };
-
+  
     try {
       const response = await Axios.post(
         "/api/dialogflow/textQuery",
