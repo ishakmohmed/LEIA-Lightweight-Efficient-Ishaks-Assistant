@@ -1,8 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const structjson = require("./structjson.js");
 const dialogflow = require("dialogflow");
-const uuid = require("uuid");
 
 const config = require("../config/keys");
 
@@ -25,7 +23,7 @@ router.post("/textQuery", async (req, res) => {
   };
 
   const responses = await sessionClient.detectIntent(request);
-  console.log("Detected intent");
+  console.log("Detected intent.");
   const result = responses[0].queryResult;
   console.log(`Query: ${result.queryText}`);
   console.log(`Response: ${result.fulfillmentText}`);
