@@ -1,1 +1,1 @@
-# This project is abandoned (but I might checkout previous commits for revision)!
+# This project is abandoned, but I might refer previous commits in future.
